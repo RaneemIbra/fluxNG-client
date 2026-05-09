@@ -6,9 +6,14 @@ p-toolbar {
 }
 
 .p-button {
-  background-color: $primary-red;
   border: none;
   width: 200px;
+  color: $primary-red;
+  font-family: 'Inter';
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.3px);
+  -webkit-backdrop-filter: blur(12.3px);
 }
 
 .p-button:not(:disabled):hover {
