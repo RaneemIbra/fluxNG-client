@@ -1,0 +1,22 @@
+@use '../../shared-styles/color-pallet.scss' as *;
+
+p-toolbar {
+  background-color: transparent;
+  border: none;
+}
+
+.p-button {
+  background-color: $primary-red;
+  border: none;
+  width: 200px;
+}
+
+.p-button:not(:disabled):hover {
+  background-color: $primary-red;
+  border: none;
+}
+
+.toolbar-end-buttons {
+  display: flex;
+  gap: 10px;
+}
