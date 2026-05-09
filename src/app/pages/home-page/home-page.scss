@@ -1,0 +1,17 @@
+@use '../../shared-styles/color-pallet.scss' as *;
+
+.hp-main-container {
+  width: 100%;
+  height: 100%;
+  background-color: $primary-grey;
+}
+
+p-toolbar {
+  background-color: transparent;
+  border: none;
+}
+
+.p-button {
+  background-color: $primary-red;
+  border: none;
+}
