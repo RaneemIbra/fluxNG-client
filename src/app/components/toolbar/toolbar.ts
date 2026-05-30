@@ -8,4 +8,8 @@ import { ButtonModule } from 'primeng/button';
   templateUrl: './toolbar.html',
   styleUrl: './toolbar.scss',
 })
-export class Toolbar {}
+export class Toolbar {
+  onClick(event: MouseEvent) {
+    console.log('Toolbar button clicked', event);
+  }
+}
