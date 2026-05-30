@@ -4,7 +4,7 @@ import { ButtonModule } from 'primeng/button';
 import { Toolbar } from '../../components/toolbar/toolbar';
 
 @Component({
-  selector: 'app-home-page',
+  selector: 'flux-home-page',
   imports: [ToolbarModule, ButtonModule, Toolbar],
   templateUrl: './home-page.html',
   styleUrl: './home-page.scss',

@@ -1,0 +1,22 @@
+{
+  "name": "fluxNG-client",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/fluxNG-client/src",
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx ng serve",
+        "cwd": "apps/fluxNG-client"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx ng build",
+        "cwd": "apps/fluxNG-client"
+      }
+    }
+  }
+}
