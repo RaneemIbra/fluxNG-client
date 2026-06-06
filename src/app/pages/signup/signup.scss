@@ -1,0 +1,19 @@
+@use '../../shared-styles/color-pallet.scss' as *;
+@use '../../shared-styles/container-styles.scss' as *;
+
+.signup-background{
+    background-color: $primary-black;
+    height: 100%;
+    @extend %center-container;
+
+    .signup-content-container{
+        @extend %center-container;
+
+        .signup-title{
+            color: $primary-red;
+        }
+        .signup-subtitle{
+            color: $primary-grey;
+        }
+    }
+}

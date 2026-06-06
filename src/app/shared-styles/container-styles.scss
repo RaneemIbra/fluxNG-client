@@ -1,0 +1,10 @@
+@mixin general-container($display: $display, $flex-direction: $flex-direction, $justify-content: $justify-content, $align-items: $align-items) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+%center-container {
+    @include general-container($display: flex, $flex-direction: column, $justify-content: center, $align-items: center);
+}

@@ -1,0 +1,6 @@
+@if(inputType() === 'text'){
+    <input pInputText type="text" [placeholder]="inputPlaceholder()" autocomplete="off" fluid />
+}
+@else {
+    <p-password [placeholder]="inputPlaceholder()" [toggleMask]="true" autocomplete="off" fluid />
+}
