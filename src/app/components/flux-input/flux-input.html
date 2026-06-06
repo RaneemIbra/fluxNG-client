@@ -1,6 +1,34 @@
-@if(inputType() === 'text'){
-    <input pInputText type="text" [placeholder]="inputPlaceholder()" autocomplete="off" fluid />
-}
-@else {
-    <p-password [placeholder]="inputPlaceholder()" [toggleMask]="true" autocomplete="off" fluid />
-}
+<div [class.p-input-icon-left]="inputIcon()">
+  
+  @if (inputIcon()) {
+    <span class="material-symbols-outlined input-left-icon">{{ inputIcon() }}</span>
+  }
+
+  @if (inputType() === 'text') {
+    <input 
+      pInputText 
+      type="text" 
+      [placeholder]="inputPlaceholder()" 
+      [maxLength]="maxLength() ?? undefined"
+      [minLength]="minLength() ?? undefined"
+      [disabled]="disabled()"
+      [ngModel]="value()"
+      (ngModelChange)="onValueChange($event)"
+      (blur)="onTouched()"
+      autocomplete="off" 
+      fluid />
+  } 
+  @else {
+    <p-password 
+      [placeholder]="inputPlaceholder()" 
+      [toggleMask]="true" 
+      [disabled]="disabled()"
+      [maxLength]="maxLength() ?? undefined"
+      [ngModel]="value()"
+      (ngModelChange)="onValueChange($event)"
+      (blur)="onTouched()"
+      autocomplete="off" 
+      fluid />
+  }
+
+</div>

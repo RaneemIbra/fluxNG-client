@@ -1,0 +1,27 @@
+@use '../../shared-styles/color-pallet.scss' as *;
+
+.p-input-icon-left {
+    position: relative;
+    display: block;
+    width: 100%;
+
+    .input-left-icon {
+        position: absolute;
+        top: 50%;
+        left: 0.75rem;
+        transform: translateY(-50%);
+        z-index: 2;
+        color: #6c757d;
+        pointer-events: none;
+    }
+
+    .p-inputtext, 
+    ::ng-deep .p-password input {
+        padding-left: 2.5rem;
+    }
+}
+
+::ng-deep .p-inputtext:enabled:focus,
+::ng-deep .p-password-input:enabled:focus {
+    border-color: $primary-white !important;
+}
